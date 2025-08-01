@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #69247C;
+  padding: 1rem;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 60vh;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container i {
+  color: #A55B4B;
+}
+
+textarea {
+  height: 200px;
+  width: 100%;
+  font-size: 1rem;
+  padding: 15px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #4F1C51;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 45px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+button i {
+  font-size: 18px;
+}
+
+select {
+  flex: 1;
+  height: 45px;
+  padding-left: 10px;
+}
+
+/* 📱 RESPONSIVENESS */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  textarea {
+    height: 150px;
+    font-size: 0.95rem;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  button, select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  textarea {
+    height: 130px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    height: 40px;
+  }
+
+  select {
+    font-size: 0.9rem;
+    height: 40px;
+  }
+}
